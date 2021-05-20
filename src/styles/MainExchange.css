@@ -16,7 +16,7 @@
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url('../assets/images/bitcoin.svg');
+  background-image: url("../assets/images/bitcoin.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
   max-width: 500px;
   height: 360px;
   margin: 0 auto;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table--title,
 .main-commission-table .commission-table--title {
@@ -61,22 +61,21 @@
 .commission-table--container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 250px;
+  max-width: 350px;
   height: 200px;
   margin: 0 auto;
   margin-bottom: 15px;
 }
 .currency-table--container table,
 .commission-table--container table {
-  width: 75%;
+  width: 82%;
   height: 100%;
 }
 .currency-table--container td,
 .commission-table--container td {
-  width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
@@ -103,20 +102,23 @@
   color: #757575;
 }
 .currency-table--container .down,
-.currency-table--container .up{
+.currency-table--container .up {
   display: inline-block;
+  position: relative;
+  right: 0;
+  top: 0;
   width: 15px;
   height: 15px;
-  margin-left: 10px;
+  margin-left: 8px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.currency-table--container .down{
-  background-image: url('../assets/icons/trending-down.svg');
+.currency-table--container .down {
+  background-image: url("../assets/icons/trending-down.svg");
 }
-.currency-table--container .up{
-  background-image: url('../assets/icons/trending-up.svg');
+.currency-table--container .up {
+  background-image: url("../assets/icons/trending-up.svg");
 }
 .right__arrow,
 .left__arrow {
@@ -133,12 +135,12 @@
 .right__arrow {
   left: 110px;
   margin-left: 15px;
-  background-image: url('../assets/icons/right-arrow.svg');
+  background-image: url("../assets/icons/right-arrow.svg");
 }
 .left__arrow {
   right: 110px;
   margin-right: 15px;
-  background-image: url('../assets/icons/left-arrow.svg');
+  background-image: url("../assets/icons/left-arrow.svg");
 }
 .hide {
   display: none;
@@ -157,7 +159,7 @@
 .currency-table--date {
   background-color: var(--soft-orange);
 }
-.commssion-table--date {
+.commission-table--date {
   background-color: var(--soft-blue);
 }
 .currency-table--date p,
@@ -165,5 +167,9 @@
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-  color: var(--warm-black)
+  color: var(--warm-black);
+}
+.main-currency-table .citas {
+  font-size: 0.8rem;
+  font-weight: 300;
 }

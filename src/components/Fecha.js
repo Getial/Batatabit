@@ -8,12 +8,12 @@ const Fecha = () => {
 
   const tiempotranscurrido = Date.now();
   const hoy = new Date(tiempotranscurrido);
-  const actual = hoy.toLocalString();
+  const actual = hoy.toLocaleString();
 
   return (
     <>
-      <p>hoy es {`${dia}/0${mes + 1}/${año}`}</p>
-      <p>{actual}</p>
+      <p><b>Actualizado:</b>{` ${dia}/0${mes + 1}/${año}`}</p>
+      {/* <p>{actual}</p> */}
     </>
   )
 }

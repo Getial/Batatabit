@@ -1,6 +1,7 @@
 import React from 'react';
 
-import '../styles/Footer.css'
+import '../styles/Footer.css';
+import LogoFooter from '../assets/images/logo-footer.svg';
 
 const Footer = () => (
   <footer>
@@ -12,7 +13,7 @@ const Footer = () => (
       </ul>
     </section>
     <section className="right">
-      <img src="../assets/images/logo-footer.svg" alt="Logo Batatabit 2021"/>
+      <img src={LogoFooter} alt="Logo Batatabit 2021"/>
     </section>
   </footer>
 )
