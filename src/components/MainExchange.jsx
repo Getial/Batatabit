@@ -87,7 +87,7 @@ class MainExchange extends Component {
                 </table>
               </div>
               <div className="commission-table--date">
-                <p><b>Actualizado:</b> 23 de Abril 23:45</p>
+              <Fecha />
               </div>
             </div>
   
