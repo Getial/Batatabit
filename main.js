@@ -48,7 +48,7 @@ let time1 = 1;
 const actulizar = setInterval(() => {
   time1++;
   refresh_coins.innerText = `${(time1).toString().padStart(2, 0)} minutos`;
-  refresh_comisions.innerText = time1;
+  refresh_comisions.innerText = `${(time1).toString().padStart(2, 0)} minutos`;
 }, 60000)
 btn_der.addEventListener("click", () => {
   tbl_monedas.classList.add("hide");
