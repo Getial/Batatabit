@@ -9,9 +9,8 @@ Personalmente he añadido el consumo de la [Crypto Api](https://www.coinlore.com
 
 
 
-## ✔️ Puedes realizar la prueba demo [aqui](https://getial.github.io/Todo-Machine/)
+## ✔️ Puedes realizar la prueba demo [aqui](https://getial.github.io/Batatabit/)
 
 ## Licencia 📄
 
 Este proyecto está bajo la Licencia MIT
->>>>>>> 591155799f838937bf6995e7f1b9c2e712dfd2c9
