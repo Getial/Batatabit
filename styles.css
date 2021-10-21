@@ -159,14 +159,44 @@ main {
 .currency-table--container,
 .commission-table--container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 250px;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 15px;
+    background: var(--just-white);
+    border-radius: 10px;
+}
+.coin_container {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    justify-content: space-around;
+    color: var(--grey);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+}
+.coin_name{
+    width: 40%;
+    height: 100%;
+    padding-top: 15px;
+}
+.coin_price {
+    width: 35%;
+    height: 100%;
+    padding-top: 15px;
+}
+.arrow {
+    width: 20%;
+    height: 100%;
+    place-self: center;
 }
 .currency-table--container table,
 .commission-table--container table {
@@ -200,26 +230,23 @@ main {
     line-height: 1.7rem;
     color: #757575;
 }
-.currency-table--container .down {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-image: url('./assets/icons/trending-down.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.currency-table--container .down,
 .currency-table--container .up {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
-    background-image: url('./assets/icons/trending-up.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+.down {
+    background-image: url('./assets/icons/trending-down.svg');
+}
+.up{
+    background-image: url('./assets/icons/trending-up.svg');
+}
+
 .right__arrow,
 .left__arrow {
     display: inline-block;
@@ -234,12 +261,12 @@ main {
 }
 .right__arrow {
     left: 110px;
-    margin-left: 15px;
+    margin-left: 50px;
     background-image: url('./assets/icons/right-arrow.svg');
 }
 .left__arrow {
     right: 110px;
-    margin-right: 15px;
+    margin-right: 50px;
     background-image: url('./assets/icons/left-arrow.svg');
 }
 .hide {
